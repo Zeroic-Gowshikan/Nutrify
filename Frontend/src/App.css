@@ -1,0 +1,147 @@
+/* Container */
+h1{
+  font-size: 2rem; 
+  margin-bottom: 20px;
+}
+
+.container{
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  height: 94vh;
+}
+
+.full{
+  flex-direction: column;
+  height: 100vh;
+  background-color: #FFFFFF;
+}
+
+
+.form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  align-items: center;
+}
+
+.inp{
+  width: 100%;
+  height: 45px;
+  font-size: 15px;
+  text-indent: 20px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  outline: none;
+  transition: box-shadow 0.3s;
+}
+.inp:focus {
+  box-shadow: 0 0 10px 0 #308641; 
+}
+
+
+
+.link{
+  color: #256732;
+}
+
+.link:hover{
+  text-shadow: 0 0 5px #236430;
+}
+
+.log-img{
+  height: 30vh;
+}
+
+/* password */
+.password-input {
+  width: 100%;
+  position: relative;
+}
+
+.toggle-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #777;
+  transition: color 0.3s ease;
+}
+
+.password-toggle-icon:hover {
+  color: #555; 
+}
+
+/* Not Found */
+.nf>h1{
+  color: white;
+}
+
+/* Message */
+.success{
+  background-color:  rgb(51, 225, 196);
+  color: rgb(2, 112, 75);
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.error{
+  background-color: rgb(253, 52, 82);
+  color: rgb(150, 0, 0);
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.invisible-msg{
+  width: 100%;
+  opacity: 0;
+}
+
+
+
+
+
+/* responsive for laptop screen */
+@media only screen and (min-width: 500px) {
+   h1{
+    font-size: 2.9rem;
+   }
+
+   h2{
+    font-size: 2rem;
+   }
+
+  .form{
+    width: 40%;
+  }
+
+  .container{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    margin-top: 5rem;
+  }
+
+  .full{
+    margin-top: 0;
+  }
+  .log-img{
+    height: 35vh;
+  }
+  h1{
+    font-size: 2.5rem;
+  }
+  
+}

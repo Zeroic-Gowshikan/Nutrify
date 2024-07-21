@@ -1,0 +1,206 @@
+  /* Diet */
+  .diet-container{
+    align-items: flex-start;
+    justify-content: initial;
+    row-gap: 20px;
+    flex-direction: column;
+    padding: 30px 20px;
+    padding-bottom: 100px;
+  
+  }
+
+  
+  .item {
+    width: 100%;
+    padding: 20px 20px 10px 20px;
+    background-color: var(--back-faded);
+    border-radius: 20px;
+    color: var(--main-color);
+  }
+  
+  .logdate{
+    height: 4.5rem;
+  }
+
+  .logout{
+    width: fit-content;
+    position: relative;
+    left: 18rem;
+    bottom: 3.3rem; 
+    padding: 10px;
+    background-color: #9affae;
+    border-radius: 50%;
+  }
+
+  .log-icon{
+    height: 1.85rem;
+    color: #308641;
+  }
+  
+  .eat-food{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ad-text{
+    display: block;
+    width: 145px;
+  }
+
+  .eat-food img{
+    width: 70%;
+    cursor: pointer;
+  }
+
+  .nut-info{
+    display: flex;
+    width: 100%;
+  }
+
+  .cal-img{
+    width: 4rem;
+  }
+
+  .nut-img1{
+    width: 50px;
+  }
+
+  .cal-div{
+    padding: 0 0;
+  }
+
+  .tol-cal{
+    display: flex;
+    column-gap: 5rem;
+    align-items: center;
+    padding-left: 20px;
+  }
+
+  .nt {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding: 10px 10px;
+  }
+
+  .n-title{
+    color: #2C3C4D;
+  }
+
+  @media only screen and (min-width: 500px) {
+    .diet-container{
+      padding: 30px 120px;
+    }
+    .eat-food{
+      padding-bottom: 50px;
+    }
+    .eat-food img{
+      width: 30%;
+    }
+
+    .item{
+      display: flex;
+      align-items: center;
+      column-gap: 5rem;
+    }
+
+    .cal-img{
+      width: 4.5rem;
+    }
+
+    .tol-cal{
+      width: 40%;
+      column-gap: 4rem;
+    }
+
+    .nut-img1{
+      width: 64px;
+    }
+
+    .nut-info{
+      width: 70%;
+    }
+
+    .nutrient{
+      text-align: center;
+    }
+
+    .item>h3{
+      width: 40%;
+    }
+
+    .cal-div{
+      padding: 10px 20px;
+    }
+  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Container for date input and icon */
+  .date-input-container {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+  }
+  
+  /* Styling for the date input */
+  .styled-date-input {
+    appearance: none;
+    padding: 10px 30px 10px 10px; /* Adjust padding for icon */
+    font-size: 16px;
+    border: 2px solid #9affae;
+    border-radius: 5px;
+    width: 100%;
+    background-color: white;
+    cursor: pointer; /* Show pointer cursor when hovering */
+  }
+
+  .styled-date-input:hover{
+    border: none;
+    border: 2px solid #bfbfbf;
+  }
+  
+  
+
+  
+  /* Styling for the FontAwesome icon */
+  .calendar-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    color: var(--main-color); /* Color for the calendar icon */
+    cursor: pointer;
+    z-index: 1; /* Ensure the icon is clickable */
+  }
+  
+
+  .styled-date-input:focus{
+    border: none;
+    outline: none;
+  }
+
+
+
+  
